@@ -1,0 +1,110 @@
+@import "~tailwindcss/base.css";
+@import "~tailwindcss/components.css";
+@import "~tailwindcss/utilities.css";
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.search-form-control {
+    padding-top: 20px;
+}
+
+.search-form-control > label {
+    font-weight: bold;
+    color: #333;
+    margin-left: 5px;
+}
+
+.search-form-control > input {
+    border: 1px solid #333;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 600px;
+}
+
+.wrapper > h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #5742C3;
+}
+
+.search-form-control > input:focus {
+    outline: none;
+}
+
+
+/* Auto complete */
+.autocomplete-container > ul > li {
+    cursor: pointer;
+    transition: all .3s;
+    color: gray;
+}
+
+.autocomplete-container > ul {
+    border: 2px solid #5742C3;
+    border-radius: 10px;
+    position: fixed;
+    background: #fff;
+    z-index: 2;
+}
+
+.recipe > img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.recipe > .recipe-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.recipe > .recipe-info > p {
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.recipe > .recipe-info > p:first-child {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5742C3;
+    font-style: italic;
+}
+
+.recipe > .recipe-info > p > a {
+    font-weight: normal;
+    text-decoration: underline;
+    margin-left: 10px;
+    color: #5742C3;
+}
+
+.get-ingredients {
+    color: #fff;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.ingredients {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.ingredients > p {
+    font-weight: 500;
+    font-style: italic;
+    color: gray;
+}
