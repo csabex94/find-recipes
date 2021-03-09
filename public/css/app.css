@@ -172074,7 +172074,10 @@ body {
 
 .ingredients {
   width: 100%;
-  margin-top: 15px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ingredients > p {
